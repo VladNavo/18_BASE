@@ -1,0 +1,7 @@
+D:\Универ\18_lesons\les1\les1\bin\Debug\les1.exe.config
+D:\Универ\18_lesons\les1\les1\bin\Debug\les1.exe
+D:\Универ\18_lesons\les1\les1\bin\Debug\les1.pdb
+D:\Универ\18_lesons\les1\les1\obj\Debug\les1.csproj.AssemblyReference.cache
+D:\Универ\18_lesons\les1\les1\obj\Debug\les1.csproj.CoreCompileInputs.cache
+D:\Универ\18_lesons\les1\les1\obj\Debug\les1.exe
+D:\Универ\18_lesons\les1\les1\obj\Debug\les1.pdb

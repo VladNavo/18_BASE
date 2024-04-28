@@ -1,0 +1,7 @@
+D:\Универ\18_lesons\les3\zad3\zad3\obj\Debug\zad3.csproj.AssemblyReference.cache
+D:\Универ\18_lesons\les3\zad3\zad3\obj\Debug\zad3.csproj.CoreCompileInputs.cache
+D:\Универ\18_lesons\les3\zad3\zad3\bin\Debug\zad3.exe.config
+D:\Универ\18_lesons\les3\zad3\zad3\bin\Debug\zad3.exe
+D:\Универ\18_lesons\les3\zad3\zad3\bin\Debug\zad3.pdb
+D:\Универ\18_lesons\les3\zad3\zad3\obj\Debug\zad3.exe
+D:\Универ\18_lesons\les3\zad3\zad3\obj\Debug\zad3.pdb

@@ -1,0 +1,7 @@
+D:\Универ\18_lesons\les4\zad2\zad2\bin\Debug\zad2.exe.config
+D:\Универ\18_lesons\les4\zad2\zad2\bin\Debug\zad2.exe
+D:\Универ\18_lesons\les4\zad2\zad2\bin\Debug\zad2.pdb
+D:\Универ\18_lesons\les4\zad2\zad2\obj\Debug\zad2.csproj.AssemblyReference.cache
+D:\Универ\18_lesons\les4\zad2\zad2\obj\Debug\zad2.csproj.CoreCompileInputs.cache
+D:\Универ\18_lesons\les4\zad2\zad2\obj\Debug\zad2.exe
+D:\Универ\18_lesons\les4\zad2\zad2\obj\Debug\zad2.pdb
