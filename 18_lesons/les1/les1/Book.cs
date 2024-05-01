@@ -8,35 +8,38 @@ namespace les1
 {
     internal class Book
     {
+        private Title tit;
+        private Author aut;
+        private Content con;
+        public Title BookTitle
+        {
+            get { return tit; }
+            set { tit = value; }
+        }
 
+
+        public Author BookAuthor
+        {
+            get { return aut; }
+            set { aut = value; }
+        }
+
+
+
+        public Content BookContent
+        {
+            get { return con; }
+            set { con = value; }
+        }
         public Book()
         {
             tit = new Title();
             aut = new Author();
             con = new Content();
         }
-        private Title tit;
+        
 
-		public Title BookTitle
-		{
-			get { return tit; }
-			set { tit = value; }
-		}
-		private Author aut;
-
-		public Author BookAuthor
-		{
-			get { return aut; }
-			set { aut = value; }
-		}
-
-		private Content con;
-
-		public Content BookContent
-		{
-			get { return con; }
-			set { con = value; }
-		}
+		
 
         public void show() 
 		{

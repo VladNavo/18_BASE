@@ -10,20 +10,21 @@ namespace les1
     {
 
 		private int myVar;
-
-		public int MyProperty
+        private int myVar1;
+        private string myVar2;
+        public int MyProperty
 		{
 			get { return myVar; }
 			
 		}
-		private int myVar1;
+		
 
 		public int MyProperty1
 		{
 			get { return myVar1; }
 			
 		}
-		private string myVar2;
+		
 
 		public string MyProperty2
 		{

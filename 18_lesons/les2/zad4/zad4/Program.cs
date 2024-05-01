@@ -8,9 +8,15 @@ namespace zad4
 {
     internal class Program
     {
-        static void Main(string[] args)
+        enum Pos
         {
-            Employee employee = new Employee("Avarice", "navo", "Менеджер", 5);
+            Manager,
+            Developer
+           
+        }
+        static void Main(string[] args)
+        { 
+            Employee employee = new Employee("Avarice", "navo", Pos.Manager, 5);
 
             
             employee.DisplayEmployeeInfo();

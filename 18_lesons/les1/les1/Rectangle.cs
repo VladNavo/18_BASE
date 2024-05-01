@@ -10,8 +10,22 @@ namespace les1
     {
        private double side1;
        private double side2;
+       private double perimetr;
+       private double area;
+        public double Area
+        {
+            get { return area; }
 
-      public Rectangle(double side1, double side2)
+        }
+
+
+        public double Perimetr
+        {
+            get { return perimetr; }
+            set { perimetr = value; }
+        }
+
+        public Rectangle(double side1, double side2)
         {
             this.side1 = side1;
             this.side2 = side2;
@@ -26,20 +40,9 @@ namespace les1
             perimetr = 2 * side1 + 2 * side2;
             return perimetr;  
         }
-        private double area;
+       
 
-        public double Area
-        {
-            get { return area; }
-            
-        }
-        private double perimetr;
-
-        public double Perimetr
-        {
-            get { return perimetr; }
-            set { perimetr = value; }
-        }
+       
 
 
 

@@ -29,7 +29,7 @@ namespace zad1
         
         public double ToBy( double money,string valuta)
         {
-            double  itog=0;
+            var  itog=0.0;
             if (valuta.Equals("usd"))
             {
                 itog = usd * money;

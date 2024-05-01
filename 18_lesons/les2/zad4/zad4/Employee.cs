@@ -10,9 +10,9 @@ namespace zad4
     {
         private string firstname;
         private string lastname;
-        private string position;
+        private Enum position;
         private int experience;
-        public Employee(string firstname,string lastname,string position,int expirience)
+        public Employee(string firstname,string lastname,Enum position,int expirience)
         {
             this.firstname = firstname;
             this.lastname = lastname;
@@ -23,20 +23,19 @@ namespace zad4
         public double Calculatemon()
         {
             double finalsumm;
-            double basem = 2000;
-            double expbonus = 1.4+5*0.1;
-            double positionBonus = 1;
-            if (position == "Менеджер")
+            var basem = 2000.0;
+            var expbonus = 1.4+5*0.1;
+            var positionBonus = 1.0;
+            switch (position.ToString())
             {
-                positionBonus = 500;
+                case "0": positionBonus = 500; break;
+                case "1": positionBonus = 1000;break;
             }
-            else if (position == "Разработчик")
-            {
-                positionBonus = 1000;
-            }
+            
+            
             finalsumm=basem*expbonus+positionBonus;
 
-           double tax = finalsumm * 0.2;
+           var tax = finalsumm * 0.2;
             finalsumm-=tax;
             return finalsumm;
         }
