@@ -11,12 +11,12 @@ namespace zad1
     {
         static void Main(string[] args)
         {
-            double usd =3.24;
-            double eur = 3.5;
-            double rub = 0.035;
+            var usd =3.24;
+            var eur = 3.5;
+            var rub = 0.035;
 
             Converter converter = new Converter(usd,eur,rub);
-            double  money =1000;
+            var money =1000.0;
             Console.WriteLine("деньги:" + money);
             
             

@@ -11,8 +11,11 @@ namespace zad3
        readonly int account;
        readonly string customer;
        readonly string provider;
+       private string article;
+       private int quantity;
+       private double price;
 
-       public Invoice(int account, string customer, string provider, double price, int quantity, string article)
+        public Invoice(int account, string customer, string provider, double price, int quantity, string article)
         {
             this.account = account;
             this.customer = customer;
@@ -22,9 +25,7 @@ namespace zad3
             this.article = article;
         }
 
-        private string article;
-        private int quantity;
-        private double price;
+        
 
         public double CalculateTotalPrice(bool withNDS)
         {
