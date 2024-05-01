@@ -6,20 +6,29 @@ using System.Threading.Tasks;
 
 namespace zad4
 {
+    enum variant
+    {
+        basic,
+        pro,
+        exp
+
+     }
     internal class Program
     {
+        
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите ключ доступа (pro/exp): ");
-            string key = Console.ReadLine();
+            Console.WriteLine("Введите ключ доступа (pro/exp/basic):(0/1/2) ");
+            var key = Console.ReadLine();
+            
 
             DocumentWorker documentWorker;
 
-            if (key == "pro")
+            if (key == variant.pro.ToString())
             {
                 documentWorker = new ProDocumentWorker();
             }
-            else if (key == "exp")
+            else if (key == variant.exp.ToString())
             {
                 documentWorker = new ExpertDocumentWorker();
             }
