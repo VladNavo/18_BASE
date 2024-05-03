@@ -1,0 +1,7 @@
+D:\18_BASE\18_lesons\les9\zad2\zad2\bin\Debug\zad2.exe.config
+D:\18_BASE\18_lesons\les9\zad2\zad2\bin\Debug\zad2.exe
+D:\18_BASE\18_lesons\les9\zad2\zad2\bin\Debug\zad2.pdb
+D:\18_BASE\18_lesons\les9\zad2\zad2\obj\Debug\zad2.csproj.AssemblyReference.cache
+D:\18_BASE\18_lesons\les9\zad2\zad2\obj\Debug\zad2.csproj.CoreCompileInputs.cache
+D:\18_BASE\18_lesons\les9\zad2\zad2\obj\Debug\zad2.exe
+D:\18_BASE\18_lesons\les9\zad2\zad2\obj\Debug\zad2.pdb
