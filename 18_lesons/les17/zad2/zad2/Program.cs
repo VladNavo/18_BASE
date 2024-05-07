@@ -6,20 +6,7 @@ using System.Threading.Tasks;
 
 namespace zad2
 {
-    public class Car
-    {
-        public string Brand { get; set; }
-        public string Model { get; set; }
-        public int Year { get; set; }
-        public string Color { get; set; }
-    }
 
-    public class Purchase
-    {
-        public string Model { get; set; }
-        public string BuyerName { get; set; }
-        public string PhoneNumber { get; set; }
-    }
     internal class Program
     {
         static void Main(string[] args)
@@ -37,15 +24,15 @@ namespace zad2
                 new Purchase { Model = "A6", BuyerName = "Robert Poulson", PhoneNumber = "+37529240556" }
             };
             var chosenModel = "A6";
-            var purchaseInfo = purchases.Where(purchase => purchase.Model == chosenModel).Join(cars, purchase => purchase.Model, car => car.Model,(purchase, car) => new
-                  {
-                      purchase.BuyerName,
-                      purchase.PhoneNumber,
-                      car.Brand,
-                      car.Model,
-                      car.Year,
-                      car.Color
-                  })
+            var purchaseInfo = purchases.Where(purchase => purchase.Model == chosenModel).Join(cars, purchase => purchase.Model, car => car.Model, (purchase, car) => new
+            {
+                purchase.BuyerName,
+                purchase.PhoneNumber,
+                car.Brand,
+                car.Model,
+                car.Year,
+                car.Color
+            })
             .FirstOrDefault();
 
             if (purchaseInfo != null)

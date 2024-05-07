@@ -15,7 +15,7 @@ namespace Zad4Calculator
 
         private void InitializeCombobox()
         {
-            string[] operation = { "Сложение", "Вычитание", "Умножение", "Деление" };
+            string[] operation = { "addition", "subtraction", "multiplication", "division" };
             comboBox1.Items.AddRange(operation);
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
 
@@ -26,46 +26,34 @@ namespace Zad4Calculator
             var text2 = textBox2.Text;
             if (TextBoxValidate(text1, text2))
             {
-                prezenter.calculate();
+                prezenter.Calculate();
             }
             else
             {
-                MessageBox.Show("Проверте корректность вводимых данных");
+                MessageBox.Show("Check the correctness of the entered data");
             }
         }
 
-        private bool TextBoxValidate(string text1,string text2 )
+        private bool TextBoxValidate(string text1, string text2)
         {
             double number;
-            var flag = true;
-            
-            if (text1 != null && text2 != null  && double.TryParse(text1, out number)&& double.TryParse(text2, out number)) 
-            {
-                flag = true;
-            }
-            else
-            {
-                flag = false;
-            }
-            return flag;
-           
+            return text1 != null && text2 != null && double.TryParse(text1, out number) && double.TryParse(text2, out number);
         }
     }
     class CalculatorModel
     {
-        public string calculate(double number1, double number2, string operation)
+        public string Calculate(double number1, double number2, string operation)
         {
             var rezult = "";
             switch (operation)
             {
-                case "Сложение": rezult = Convert.ToString(number1 + number2); break;
-                case "Вычитание": rezult = Convert.ToString(number1 - number2); break;
-                case "Умножение": rezult = Convert.ToString(number1 * number2); break;
-                case "Деление":
-
+                case "addition": rezult = Convert.ToString(number1 + number2); break;
+                case "subtraction": rezult = Convert.ToString(number1 - number2); break;
+                case "multiplication": rezult = Convert.ToString(number1 * number2); break;
+                case "division":
                     if (number2 == 0)
                     {
-                        throw new Exception("Нельзя делить на 0");
+                        throw new Exception("Can not divide by 0");
                     }
                     else
                     {
@@ -92,7 +80,7 @@ namespace Zad4Calculator
             model = new CalculatorModel();
         }
 
-        public void calculate()
+        public void Calculate()
         {
             var number1 = Convert.ToDouble(view.textBox1.Text);
             var number2 = Convert.ToDouble(view.textBox2.Text);
@@ -100,8 +88,8 @@ namespace Zad4Calculator
 
             try
             {
-                var result = model.calculate(number1, number2, operation);
-                view.richTextBox1.Text = $"Результатом операции {operation} над числами(цифрами):{number1} и {number2} является число(цифра):{result}";
+                var result = model.Calculate(number1, number2, operation);
+                view.richTextBox1.Text = $"\r\nResult of the operation {operation} over numbers (digits):{number1} and {number2} is a number(digit):{result}";
             }
             catch (Exception ex)
             {

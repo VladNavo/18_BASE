@@ -10,6 +10,10 @@ namespace zad2
     {
         static void Main(string[] args)
         {
+            MyList<int> list = new MyList<int>();
+            for(int i = 0; i < 100; i++){list.Add(i);}
+            Console.WriteLine(list.GetEnumerator());
+            Console.WriteLine(list[10]);
         }
     }
 }
