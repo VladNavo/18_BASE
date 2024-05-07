@@ -11,6 +11,7 @@ namespace zad2
     {
         static void Main(string[] args)
         {
+            const string CHOSENMODEL = "A6";
             List<Car> cars = new List<Car>
             {
                 new Car { Brand = "Toyota", Model = "Camry", Year = 2020, Color = "Black" },
@@ -23,8 +24,8 @@ namespace zad2
                 new Purchase { Model = "Civic", BuyerName = "Robert Poulson", PhoneNumber = "+37529240556" },
                 new Purchase { Model = "A6", BuyerName = "Robert Poulson", PhoneNumber = "+37529240556" }
             };
-            var chosenModel = "A6";
-            var purchaseInfo = purchases.Where(purchase => purchase.Model == chosenModel).Join(cars, purchase => purchase.Model, car => car.Model, (purchase, car) => new
+           
+            var purchaseInfo = purchases.Where(purchase => purchase.Model == CHOSENMODEL).Join(cars, purchase => purchase.Model, car => car.Model, (purchase, car) => new
             {
                 purchase.BuyerName,
                 purchase.PhoneNumber,
@@ -37,19 +38,19 @@ namespace zad2
 
             if (purchaseInfo != null)
             {
-                Console.WriteLine($"Информация о покупателе:");
-                Console.WriteLine($"Имя: {purchaseInfo.BuyerName}");
-                Console.WriteLine($"Номер телефона: {purchaseInfo.PhoneNumber}");
+                Console.WriteLine($"Information about customer:");
+                Console.WriteLine($"Name: {purchaseInfo.BuyerName}");
+                Console.WriteLine($"Telephone number: {purchaseInfo.PhoneNumber}");
 
-                Console.WriteLine($"Характеристики приобретенного автомобиля:");
-                Console.WriteLine($"Марка: {purchaseInfo.Brand}");
-                Console.WriteLine($"Модель: {purchaseInfo.Model}");
-                Console.WriteLine($"Год выпуска: {purchaseInfo.Year}");
-                Console.WriteLine($"Цвет: {purchaseInfo.Color}");
+                Console.WriteLine($"Characteristics of the purchased car:");
+                Console.WriteLine($"Brand: {purchaseInfo.Brand}");
+                Console.WriteLine($"Model: {purchaseInfo.Model}");
+                Console.WriteLine($"Year: {purchaseInfo.Year}");
+                Console.WriteLine($"Color: {purchaseInfo.Color}");
             }
             else
             {
-                Console.WriteLine("Информация не найдена.");
+                Console.WriteLine("Information not found");
             }
         }
     }
