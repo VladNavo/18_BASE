@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\18_BASE\\18_lesons\\les12\\Zad4Calculator\\Zad4Calculator\\Zad4Calculator.csproj",
+      "projectUniqueName": "V:\\18_BASE\\18_lesons\\les12\\Zad4Calculator\\Zad4Calculator\\Zad4Calculator.csproj",
       "projectName": "Zad4Calculator",
-      "projectPath": "D:\\18_BASE\\18_lesons\\les12\\Zad4Calculator\\Zad4Calculator\\Zad4Calculator.csproj",
+      "projectPath": "V:\\18_BASE\\18_lesons\\les12\\Zad4Calculator\\Zad4Calculator\\Zad4Calculator.csproj",
       "packagesPath": "C:\\Users\\vladl\\.nuget\\packages\\",
-      "outputPath": "D:\\18_BASE\\18_lesons\\les12\\Zad4Calculator\\Zad4Calculator\\obj\\",
+      "outputPath": "V:\\18_BASE\\18_lesons\\les12\\Zad4Calculator\\Zad4Calculator\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\vladl\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -56,6 +61,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[7.0.18, 7.0.18]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[7.0.18, 7.0.18]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[7.0.18, 7.0.18]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[7.0.18, 7.0.18]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -64,7 +87,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "UqAIzpxcbXzkHqMJKd1dXKXKQ3IPxreFTD87mukxdxnwSIABr5eBmuyAbrxESt72frZN7V6SAGkehhAg1bXrTw==",
+  "dgSpecHash": "wG3lrcvhv22agVWI96ZHsRPlllUlMDeZmzI6GvcL4hgG4zhYb0oJwRLdl4X+j76pbDX3URWRrMsUwIvvREXw/Q==",
   "success": true,
-  "projectFilePath": "D:\\18_BASE\\18_lesons\\les12\\Zad4Calculator\\Zad4Calculator\\Zad4Calculator.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "V:\\18_BASE\\18_lesons\\les12\\Zad4Calculator\\Zad4Calculator\\Zad4Calculator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vladl\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.18\\microsoft.windowsdesktop.app.ref.7.0.18.nupkg.sha512",
+    "C:\\Users\\vladl\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.18\\microsoft.netcore.app.ref.7.0.18.nupkg.sha512",
+    "C:\\Users\\vladl\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.18\\microsoft.aspnetcore.app.ref.7.0.18.nupkg.sha512",
+    "C:\\Users\\vladl\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.18\\microsoft.netcore.app.host.win-x64.7.0.18.nupkg.sha512"
+  ],
   "logs": []
 }

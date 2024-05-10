@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Zad4Calculator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0e955767168f5a38fe6272016cdf2a1ceeee2ef")]
 [assembly: System.Reflection.AssemblyProductAttribute("Zad4Calculator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Zad4Calculator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
