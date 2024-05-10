@@ -8,6 +8,6 @@ namespace zad2
 {
     public class Experement
     {
-        public int nummber;
+        public int nummber = 21;
     }
 }
